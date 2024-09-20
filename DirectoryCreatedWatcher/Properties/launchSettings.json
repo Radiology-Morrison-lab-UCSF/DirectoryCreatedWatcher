@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DirectoryCreatedWatcher": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\temp\\ 0:00:03 cmd /K \"cd <<path>>\""
+    }
+  }
+}
