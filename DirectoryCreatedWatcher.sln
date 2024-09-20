@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6ACC2871-7581-4E03-A9DC-EB2B199E3E38}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		unix-build.sh = unix-build.sh
 	EndProjectSection
 EndProject
 Global

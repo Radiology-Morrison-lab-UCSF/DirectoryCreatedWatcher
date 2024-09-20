@@ -11,7 +11,7 @@ internal class ProcessRunningMonitor(DirectoryInfo toWatch, bool watchSubdirs, s
 
    public string Command { get; } = command;
    public string[] CommandArgs { get; } = commandArgs;
-   public const string PathPlaceholder = "<<path>>";
+   public const string PathPlaceholder = "[path]";
 
    protected override void RunCommand(string dir)
    {
@@ -24,7 +24,7 @@ internal class ProcessRunningMonitor(DirectoryInfo toWatch, bool watchSubdirs, s
          ProcessStartInfo psi = new(Command, cmdArgs)
          {
             UseShellExecute = true,
-            WorkingDirectory = dir
+            WorkingDirectory = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)
          };
 
          Logger.Log($"Running command {Command} {string.Join(" ", cmdArgs)}");

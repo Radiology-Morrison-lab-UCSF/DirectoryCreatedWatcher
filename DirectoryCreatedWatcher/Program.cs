@@ -47,11 +47,11 @@ Monitors a directory for changes. When a subdirectory is added, this will execut
 Use
 DirectoryCreatedWatcher </path/to/my/dir> <delay> <command> <command arguments>
 
-For command arguments, write <<path>> to indicate where the full path of the directory should be substituted
+For command arguments, write [path] to indicate where the full path of the directory should be substituted
 
 Example:
 
-./DirectoryCreatedWatcher /path/to/my/dir 1:00:00 7z a myzip.7z <<path>>
+./DirectoryCreatedWatcher /path/to/my/dir 1:00:00 7z a myzip.7z [path]
 
 when /path/to/my/dir/newdir is created this will wait one hour, then execute 
 7z a myzip.7z /path/to/my/dir/newdir/
