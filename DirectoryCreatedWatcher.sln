@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryCreatedWatcher", "DirectoryCreatedWatcher\DirectoryCreatedWatcher.csproj", "{8ACB6D1B-8F44-435C-846D-0F108AE98DB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectoryCreatedWatcher", "DirectoryCreatedWatcher\DirectoryCreatedWatcher.csproj", "{8ACB6D1B-8F44-435C-846D-0F108AE98DB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryCreatedWatcherTests", "DirectoryCreatedWatcherTests\DirectoryCreatedWatcherTests.csproj", "{93FEA95A-AEAF-40E4-BF53-C569BC9F93FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8ACB6D1B-8F44-435C-846D-0F108AE98DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ACB6D1B-8F44-435C-846D-0F108AE98DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ACB6D1B-8F44-435C-846D-0F108AE98DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93FEA95A-AEAF-40E4-BF53-C569BC9F93FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93FEA95A-AEAF-40E4-BF53-C569BC9F93FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93FEA95A-AEAF-40E4-BF53-C569BC9F93FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93FEA95A-AEAF-40E4-BF53-C569BC9F93FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

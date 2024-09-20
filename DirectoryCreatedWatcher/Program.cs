@@ -27,11 +27,11 @@ internal class Program
       // Pass Args
       TimeSpan delay = TimeSpan.Parse(args[1]);
       string command = args[2];
-      string?[] commandArgs = args[3..];
+      string[] commandArgs = args[3..];
 
       var tokenSource = new CancellationTokenSource();
 
-      Monitor m = new(new DirectoryInfo(directoryToMonitor), true, command, commandArgs)
+      ProcessRunningMonitor m = new(new DirectoryInfo(directoryToMonitor), true, command, commandArgs)
       {
          DelayBeforeExecution = delay
       };
