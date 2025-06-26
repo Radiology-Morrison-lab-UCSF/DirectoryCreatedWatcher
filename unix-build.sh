@@ -11,10 +11,7 @@ if [[ "$1" == "--ucsf" ]]; then
 else
 
     DOTNET_DIR=$(mktemp -d)
-    echo "$DOTNET_DIR"
-
     trap '[[ -d "$DOTNET_DIR" ]] && rm -rf "$DOTNET_DIR"' EXIT INT TERM
-    mkdir -p "$DOTNET_DIR"
     echo "Downloading dotnet sdk"
     curl -sSL "https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.411/dotnet-sdk-8.0.411-linux-x64.tar.gz" | tar -xz -C "$DOTNET_DIR"
     export DOTNET_ROOT="$DOTNET_DIR"
